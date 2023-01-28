@@ -1,0 +1,77 @@
+/* Kill Team stylesheet */
+/* https://github.com/r0tational/warhammer-battlescribe-css/blob/master/killteam-battlescribe.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,700;1,400&family=Oswald:wght@700&display=swap');
+
+.page {
+	overflow-x: auto;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+.icon-box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100px;
+	text-align: center;
+}
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 100%;
+}
+
+img.profile {
+	border-radius: 50%;
+	width: 20em;
+	height: 20em;
+}
+
+.back-icon {
+	position: absolute;
+	margin: 10px;
+	top: 10px;
+	left: 10px;
+}
+
+div.map {
+	position: relative;
+	display: inline-block;
+	width: 600px;
+}
+
+svg.target {
+	cursor: pointer;
+	padding: 10px;
+	z-index: 99;
+	position: absolute;
+	width: 10px;
+}
+
+img.map {
+	width: 100%;
+}
+
+a,
+u {
+	text-decoration: none !important;
+}
+
+a:link {
+	color: black;
+} /* unvisited link */
+a:visited {
+	color: black;
+} /* visited link */
+a:hover {
+	color: black;
+} /* mouse over link */
+a:active {
+	color: black;
+} /* selected link */
