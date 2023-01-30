@@ -1,6 +1,6 @@
 <script>
 	import profile from '$lib/images/profile.jpeg';
-	import Icon from '@iconify/svelte';
+	import IconButton from '$lib/components/IconButton.svelte';
 </script>
 
 <div class="page">
@@ -8,17 +8,17 @@
 		<img class="profile" src={profile} alt="profile" />
 	</div>
 	<div class="container">
-		<a href="/workplaces">
-			<div class="icon-box">
-				<Icon href="/workplaces" width="90" icon="ph:map-trifold-duotone" />
-				<div>Places I've Worked</div>
-			</div>
-		</a>
-		<a href="/skills">
-			<div class="icon-box">
-				<Icon width="90" icon="fluent:design-ideas-20-filled" />
-				<div>My Skills</div>
-			</div>
-		</a>
+		<IconButton
+			href={'/workplaces'}
+			width="90"
+			iconClass="ph:map-trifold-duotone"
+			buttonText="Places I've Worked"
+		/>
+		<IconButton
+			href={'/skills'}
+			width="90"
+			iconClass="fluent:design-ideas-20-filled"
+			buttonText="My Skills"
+		/>
 	</div>
 </div>

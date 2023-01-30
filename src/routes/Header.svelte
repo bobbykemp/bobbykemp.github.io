@@ -1,7 +1,7 @@
 <header>
 	<div class="main">Bobby Kemp</div>
 	<div class="secondary-container">
-		<div class="typewriter">Full Stack Software Engineer</div>
+		<div class="typewriter">Software Engineer</div>
 	</div>
 </header>
 
@@ -16,7 +16,7 @@
 	}
 	div.main {
 		font-family: 'Eczar', serif;
-		font-size: 2em;
+		font-size: 2.3em;
 	}
 	div.secondary-container {
 		display: flex;
@@ -29,7 +29,7 @@
 		white-space: nowrap; /* Keeps the content on a single line */
 		margin: 0 auto; /* Gives that scrolling effect as the typing happens */
 		letter-spacing: 0.15em; /* Adjust as needed */
-		animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+		animation: typing 2s steps(20, end), blink-caret 0.75s step-end infinite;
 	}
 
 	/* The typing effect */
@@ -49,7 +49,7 @@
 			border-color: transparent;
 		}
 		50% {
-			border-color: orange;
+			border-color: rgb(128, 128, 128);
 		}
 	}
 </style>

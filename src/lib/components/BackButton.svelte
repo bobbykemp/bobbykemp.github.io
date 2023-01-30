@@ -4,5 +4,5 @@
 </script>
 
 <a {href}>
-	<Icon class="back-icon" icon="ic:round-arrow-back-ios" width="30" />
+	<Icon class="back-icon" icon="mdi:arrow-back-circle" width="30" />
 </a>
