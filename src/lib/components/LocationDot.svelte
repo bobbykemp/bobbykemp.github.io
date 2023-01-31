@@ -7,7 +7,7 @@
 
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <div style={`top: ${top}px; left: ${left}px`} class="target" on:click={onClick}>
-	<Icon icon="material-symbols:push-pin-outline" />
+	<Icon style="color: #F5F0DD" icon="material-symbols:push-pin-outline" />
 </div>
 
 <style>
@@ -16,6 +16,6 @@
 		padding: 4px;
 		z-index: 9;
 		position: absolute;
-		width: 10px;
+		width: 15px;
 	}
 </style>

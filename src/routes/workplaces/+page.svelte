@@ -121,7 +121,7 @@
 {/if}
 
 <div class="page">
-	<h4>Click the points on the map to explore where I've been, and what I've done</h4>
+	<p><i>Click the pins on the map to explore where I've been, and what I've done there!</i></p>
 	<div class="map">
 		<img src={iowaMap} alt="Iowa map" />
 		<img src={texasMap} alt="Texas map" />

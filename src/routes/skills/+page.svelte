@@ -1,33 +1,230 @@
 <script>
 	import BackButton from '$lib/components/BackButton.svelte';
+	import IconCard from '$lib/components/IconCard.svelte';
+
+	const width = '30';
+	const flexDirection = 'row';
+
+	const orange = '#FDA649';
+	const ivory = '#F5F0DD';
+
+	const skills = {
+		languages: [
+			{
+				iconColor: ivory,
+				textColor: ivory,
+				iconClass: 'mdi:language-python',
+				buttonText: 'Python'
+			},
+			{
+				iconColor: ivory,
+				textColor: ivory,
+				iconClass: 'mdi:language-javascript',
+				buttonText: 'JavaScript'
+			},
+			{
+				iconColor: ivory,
+				textColor: ivory,
+				iconClass: 'mdi:language-java',
+				buttonText: 'Java'
+			}
+		],
+		frameworks: [
+			{
+				iconColor: ivory,
+				textColor: ivory,
+				iconClass: 'mdi:react',
+				buttonText: 'React'
+			},
+			{
+				iconColor: ivory,
+				textColor: ivory,
+				iconClass: 'file-icons:workbox',
+				buttonText: 'Workbox'
+			},
+			{
+				iconColor: ivory,
+				textColor: ivory,
+				iconClass: 'simple-icons:django',
+				buttonText: 'Django & Django REST'
+			},
+			{
+				iconColor: ivory,
+				textColor: ivory,
+				iconClass: 'simple-icons:celery',
+				buttonText: 'Celery Task Queue'
+			},
+			{
+				iconColor: ivory,
+				textColor: ivory,
+				iconClass: 'mdi:jquery',
+				buttonText: 'JQuery'
+			},
+			{
+				iconColor: ivory,
+				textColor: ivory,
+				iconClass: 'simple-icons:junit5',
+				buttonText: 'JUnit'
+			}
+		],
+		devops: [
+			{
+				iconColor: ivory,
+				textColor: ivory,
+				iconClass: 'mdi:git',
+				buttonText: 'Git'
+			},
+			{
+				iconColor: ivory,
+				textColor: ivory,
+				iconClass: 'mdi:docker',
+				buttonText: 'Docker'
+			},
+			{
+				iconColor: ivory,
+				textColor: ivory,
+				iconClass: 'mdi:powershell',
+				buttonText: 'PowerShell'
+			},
+			{
+				iconColor: ivory,
+				textColor: ivory,
+				iconClass: 'mdi:bash',
+				buttonText: 'Bash'
+			},
+			{
+				iconColor: ivory,
+				textColor: ivory,
+				iconClass: 'vscode-icons:file-type-makefile',
+				buttonText: 'GNU make'
+			},
+			{
+				iconColor: ivory,
+				textColor: ivory,
+				iconClass: 'simple-icons:elasticsearch',
+				buttonText: 'ElasticSearch'
+			},
+			{
+				iconColor: ivory,
+				textColor: ivory,
+				iconClass: 'simple-icons:elasticsearch',
+				buttonText: 'Logstash'
+			},
+			{
+				iconColor: ivory,
+				textColor: ivory,
+				iconClass: 'simple-icons:kibana',
+				buttonText: 'Kibana'
+			}
+		],
+		databases: [
+			{
+				iconColor: ivory,
+				textColor: ivory,
+				iconClass: 'tabler:brand-mysql',
+				buttonText: 'MySQL'
+			},
+			{
+				iconColor: ivory,
+				textColor: ivory,
+				iconClass: 'carbon:ibm-db2-alt',
+				buttonText: 'DB2'
+			}
+		],
+		systems: [
+			{
+				iconColor: ivory,
+				textColor: ivory,
+				iconClass: 'mdi:ubuntu',
+				buttonText: 'Ubuntu & Ubuntu Server'
+			},
+			{
+				iconColor: ivory,
+				textColor: ivory,
+				iconClass: 'mdi:centos',
+				buttonText: 'CentOS'
+			},
+			{
+				iconColor: ivory,
+				textColor: ivory,
+				iconClass: 'mdi:microsoft-windows',
+				buttonText: 'Windows Server'
+			}
+		]
+	};
 </script>
 
 <BackButton />
 
-<div class="card">
-	<h3 class="card-title"><b>Languages</b></h3>
-	<div class="container">
-		<p class="card-content">
-			Python, JavaScript, React, jQuery, Google Workbox, Docker, Docker Compose, Java, JUnit, C#,
-			Git, PowerShell, PowerBI, PowerBI Report Builder, Microsoft Power Apps, Microsoft Power
-			Automate, Batch, Bash, Elasticsearch, Logstash, Django, Django-REST Framework, Celery Task
-			Queue, SQL (SQLite, MySQL, PostgreSQL), Ubuntu, Ubuntu Server, CentOS, macOS, Windows, Windows
-			Server
-		</p>
-	</div>
+<h3 class="card-title"><b>Languages</b></h3>
+<div class="container">
+	{#each skills.languages as skill}
+		<IconCard
+			{width}
+			{flexDirection}
+			iconColor={skill.iconColor}
+			textColor={skill.textColor}
+			iconClass={skill.iconClass}
+			buttonText={skill.buttonText}
+		/>
+	{/each}
+</div>
+<h3 class="card-title"><b>Frameworks</b></h3>
+<div class="container">
+	{#each skills.frameworks as skill}
+		<IconCard
+			{width}
+			{flexDirection}
+			iconColor={skill.iconColor}
+			textColor={skill.textColor}
+			iconClass={skill.iconClass}
+			buttonText={skill.buttonText}
+			backgroundColor={orange}
+		/>
+	{/each}
+</div>
+<h3 class="card-title"><b>Devops</b></h3>
+<div class="container">
+	{#each skills.devops as skill}
+		<IconCard
+			{width}
+			{flexDirection}
+			iconColor={skill.iconColor}
+			textColor={skill.textColor}
+			iconClass={skill.iconClass}
+			buttonText={skill.buttonText}
+		/>
+	{/each}
+</div>
+<h3 class="card-title"><b>Databases</b></h3>
+<div class="container">
+	{#each skills.databases as skill}
+		<IconCard
+			{width}
+			{flexDirection}
+			iconColor={skill.iconColor}
+			textColor={skill.textColor}
+			iconClass={skill.iconClass}
+			buttonText={skill.buttonText}
+			backgroundColor={orange}
+		/>
+	{/each}
+</div>
+<h3 class="card-title"><b>Systems</b></h3>
+<div class="container">
+	{#each skills.systems as skill}
+		<IconCard
+			{width}
+			{flexDirection}
+			iconColor={skill.iconColor}
+			textColor={skill.textColor}
+			iconClass={skill.iconClass}
+			buttonText={skill.buttonText}
+		/>
+	{/each}
 </div>
 
 <style>
-	.card {
-		/* Add shadows to create the "card" effect */
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-		transition: 0.3s;
-		border-radius: 20px;
-	}
-	.card-content {
-		word-spacing: 0.5em;
-		padding: 20px;
-	}
 	.card-title {
 		padding-top: 20px;
 		margin: auto;
@@ -35,13 +232,9 @@
 		justify-content: center;
 		align-items: center;
 	}
-	/* On mouse-over, add a deeper shadow */
-	.card:hover {
-		box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-	}
-
-	/* Add some padding inside the card container */
 	.container {
 		padding: 2px;
+		justify-content: center;
+		align-items: left;
 	}
 </style>

@@ -13,12 +13,16 @@
 			width="90"
 			iconClass="ph:map-trifold-duotone"
 			buttonText="Places I've Worked"
+			iconColor="#F5F0DD"
+			textColor="#F5F0DD"
 		/>
 		<IconButton
 			href={'/skills'}
 			width="90"
 			iconClass="fluent:design-ideas-20-filled"
 			buttonText="My Skills"
+			iconColor="#F5F0DD"
+			textColor="#F5F0DD"
 		/>
 	</div>
 </div>
