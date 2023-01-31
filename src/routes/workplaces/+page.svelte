@@ -1,5 +1,6 @@
 <script>
-	import map from '$lib/images/map.png';
+	import iowaMap from '$lib/images/iowa.png';
+	import texasMap from '$lib/images/texas.png';
 	import BackButton from '$lib/components/BackButton.svelte';
 	import LocationDot from '$lib/components/LocationDot.svelte';
 	import Tooltip from '$lib/components/Tooltip.svelte';
@@ -13,8 +14,8 @@
 			shortName: 'Arlington',
 			longName: 'Arlington, Texas',
 			position: {
-				top: 260,
-				left: 280
+				top: 334,
+				left: 217
 			},
 			description: `<h3>College in Arlington</h3>
 			<h5>August 2016 - May 2020</h5>
@@ -48,6 +49,16 @@
 				technologies, and design principles for building games effectively. We also 
 				held the occasional Game Jam to put our skills to the test!
 			</p>
+			`
+		},
+		{
+			shortName: 'Ft. Worth',
+			longName: 'Fort Worth, Texas',
+			position: {
+				top: 319,
+				left: 233
+			},
+			description: `
 			<h3>Internship/Job at Herzog Technologies (HTI)</h3>
 			<h5>June 2019 – June 2020; June 2020 - February 2022</h5>
 			<p>
@@ -75,8 +86,8 @@
 			shortName: 'Burlington',
 			longName: 'Burlington, Iowa',
 			position: {
-				top: 140,
-				left: 338
+				top: 164,
+				left: 262
 			},
 			description: `<h3>Internship at Federal Mogul (My First Job)</h3>
 			<h5>May 2017 – August 2017; May 2018 – August 2018</h5>
@@ -95,8 +106,8 @@
 			shortName: 'Davenport',
 			longName: 'Davenport, Iowa',
 			position: {
-				top: 128,
-				left: 342
+				top: 118,
+				left: 280
 			},
 			description: ``
 		}
@@ -112,7 +123,8 @@
 <div class="page">
 	<h4>Click the points on the map to explore where I've been, and what I've done</h4>
 	<div class="map">
-		<img src={map} alt="U.S. map" />
+		<img src={iowaMap} alt="Iowa map" />
+		<img src={texasMap} alt="Texas map" />
 		{#each workplaces as workplace}
 			<Tooltip
 				title={workplace.longName}
@@ -143,7 +155,7 @@
 
 	.map img {
 		display: block;
-		max-width: 600px;
+		max-width: 325px;
 		height: auto;
 	}
 </style>

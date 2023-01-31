@@ -3,6 +3,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,700;1,400&family=Oswald:wght@700&display=swap');
 
+html {
+	background-color: #f5f0dd;
+}
+
 .page {
 	overflow-x: auto;
 	display: flex;
@@ -15,15 +19,10 @@
 }
 .container {
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-evenly;
 	width: 100%;
-}
-
-img.profile {
-	border-radius: 50%;
-	width: 20em;
-	height: 20em;
 }
 
 .back-icon {

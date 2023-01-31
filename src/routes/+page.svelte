@@ -22,3 +22,12 @@
 		/>
 	</div>
 </div>
+
+<style>
+	.profile {
+		border: 10px solid #1c516c;
+		border-radius: 50%;
+		width: 20em;
+		height: 20em;
+	}
+</style>
