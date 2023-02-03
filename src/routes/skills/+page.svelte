@@ -13,14 +13,14 @@
 			{
 				iconColor: ivory,
 				textColor: ivory,
-				iconClass: 'mdi:language-python',
-				buttonText: 'Python'
+				iconClass: 'mdi:language-javascript',
+				buttonText: 'JavaScript'
 			},
 			{
 				iconColor: ivory,
 				textColor: ivory,
-				iconClass: 'mdi:language-javascript',
-				buttonText: 'JavaScript'
+				iconClass: 'mdi:language-python',
+				buttonText: 'Python'
 			},
 			{
 				iconColor: ivory,
@@ -158,69 +158,95 @@
 
 <h3 class="card-title"><b>Languages</b></h3>
 <div class="container">
-	{#each skills.languages as skill}
-		<IconCard
-			{width}
-			{flexDirection}
-			iconColor={skill.iconColor}
-			textColor={skill.textColor}
-			iconClass={skill.iconClass}
-			buttonText={skill.buttonText}
-		/>
+	{#each skills.languages as skill, index}
+		<div class="animation-wrapper" style="--animation-order: {index};">
+			<IconCard
+				{width}
+				{flexDirection}
+				iconColor={skill.iconColor}
+				textColor={skill.textColor}
+				iconClass={skill.iconClass}
+				buttonText={skill.buttonText}
+			/>
+		</div>
 	{/each}
 </div>
 <h3 class="card-title"><b>Frameworks</b></h3>
 <div class="container">
-	{#each skills.frameworks as skill}
-		<IconCard
-			{width}
-			{flexDirection}
-			iconColor={skill.iconColor}
-			textColor={skill.textColor}
-			iconClass={skill.iconClass}
-			buttonText={skill.buttonText}
-			backgroundColor={orange}
-		/>
+	{#each skills.frameworks as skill, index}
+		<div class="animation-wrapper" style="--animation-order: {skills.languages.length + index};">
+			<IconCard
+				{width}
+				{flexDirection}
+				iconColor={skill.iconColor}
+				textColor={skill.textColor}
+				iconClass={skill.iconClass}
+				buttonText={skill.buttonText}
+				backgroundColor={orange}
+			/>
+		</div>
 	{/each}
 </div>
 <h3 class="card-title"><b>Devops</b></h3>
 <div class="container">
-	{#each skills.devops as skill}
-		<IconCard
-			{width}
-			{flexDirection}
-			iconColor={skill.iconColor}
-			textColor={skill.textColor}
-			iconClass={skill.iconClass}
-			buttonText={skill.buttonText}
-		/>
+	{#each skills.devops as skill, index}
+		<div
+			class="animation-wrapper"
+			style="--animation-order: {skills.languages.length + skills.frameworks.length + index};"
+		>
+			<IconCard
+				{width}
+				{flexDirection}
+				iconColor={skill.iconColor}
+				textColor={skill.textColor}
+				iconClass={skill.iconClass}
+				buttonText={skill.buttonText}
+			/>
+		</div>
 	{/each}
 </div>
 <h3 class="card-title"><b>Databases</b></h3>
 <div class="container">
-	{#each skills.databases as skill}
-		<IconCard
-			{width}
-			{flexDirection}
-			iconColor={skill.iconColor}
-			textColor={skill.textColor}
-			iconClass={skill.iconClass}
-			buttonText={skill.buttonText}
-			backgroundColor={orange}
-		/>
+	{#each skills.databases as skill, index}
+		<div
+			class="animation-wrapper"
+			style="--animation-order: {skills.languages.length +
+				skills.frameworks.length +
+				skills.devops.length +
+				index};"
+		>
+			<IconCard
+				{width}
+				{flexDirection}
+				iconColor={skill.iconColor}
+				textColor={skill.textColor}
+				iconClass={skill.iconClass}
+				buttonText={skill.buttonText}
+				backgroundColor={orange}
+			/>
+		</div>
 	{/each}
 </div>
 <h3 class="card-title"><b>Systems</b></h3>
 <div class="container">
-	{#each skills.systems as skill}
-		<IconCard
-			{width}
-			{flexDirection}
-			iconColor={skill.iconColor}
-			textColor={skill.textColor}
-			iconClass={skill.iconClass}
-			buttonText={skill.buttonText}
-		/>
+	{#each skills.systems as skill, index}
+		<div
+			class="animation-wrapper"
+			style="--animation-order: {skills.languages.length +
+				skills.frameworks.length +
+				skills.devops.length +
+				skills.databases.length +
+				index};"
+		>
+			<IconCard
+				{width}
+				{flexDirection}
+				iconColor={skill.iconColor}
+				textColor={skill.textColor}
+				iconClass={skill.iconClass}
+				buttonText={skill.buttonText}
+			/>
+		</div>
 	{/each}
 </div>
 
@@ -236,5 +262,22 @@
 		padding: 2px;
 		justify-content: center;
 		align-items: left;
+	}
+	.animation-wrapper {
+		animation-name: animateIn;
+		animation-duration: 350ms;
+		animation-delay: calc(var(--animation-order) * 100ms);
+		animation-fill-mode: both;
+		animation-timing-function: ease-in-out;
+	}
+	@keyframes animateIn {
+		0% {
+			opacity: 0;
+			transform: scale(0.6) translateY(-8px);
+		}
+
+		100% {
+			opacity: 1;
+		}
 	}
 </style>

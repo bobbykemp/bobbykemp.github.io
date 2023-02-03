@@ -5,12 +5,24 @@
 	export let iconClass = '';
 	export let buttonText = '';
 	export let href = '/';
+	export let flexDirection = 'column';
 	export let iconColor = '#000000';
 	export let textColor = '#000000';
+	export let backgroundColor = '#1C516C';
+	export let minWidth = '150px';
 </script>
 
 <a {href} class="icon-link">
-	<IconCard {width} {iconClass} {buttonText} {iconColor} {textColor} />
+	<IconCard
+		{minWidth}
+		{flexDirection}
+		{width}
+		{iconClass}
+		{buttonText}
+		{iconColor}
+		{textColor}
+		{backgroundColor}
+	/>
 </a>
 
 <style>

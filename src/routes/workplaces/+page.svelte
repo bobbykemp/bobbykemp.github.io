@@ -23,14 +23,14 @@
 				I moved to Arlington, Texas after graduating salutatorian from Burlington 
 				Highschool. While living in Arlington, I pursused a degree in Computer 
 				Science with a minor in Business Information Systems at the University 
-				of Texas at Arlington.
+				of Texas at Arlington (Go Mavs!).
 			</p>
 			<p>
-				Four years later, I would graduate Magna Cum Laude with an Honors Bachelor 
-				of Science in Computer Science with a minor in Business Information Systems.
+				In 2020 I graduated Magna Cum Laude with an Honors Bachelor 
+				of Science in Computer Science and a minor in Business Information Systems.
 			</p>
 			<p>
-				During my four year degree at UTA, I would participate in several different 
+				During my four year degree at UTA, I participated in various
 				honors societies on campus, including:
 			<ul>
 				<li>Tau Beta Pi Engineering Honors Society</li>
@@ -43,11 +43,11 @@
 				participate in charity events all over the Dallas Fort-Worth area.
 			</p>
 			<p>
-				While at UTA I also served as Vice President of the Game Developers Club my 
-				Junior and Senior years. GDC was the perfect club for aspiring or hobbyist 
-				game developers as we held weekly meetings discussing different engines, new 
+				While at UTA I also served as Vice President of the Game Developers Club
+				Junior and Senior year. GDC was the perfect club for aspiring
+				game developers. We held weekly meetings discussing different engines, new 
 				technologies, and design principles for building games effectively. We also 
-				held the occasional Game Jam to put our skills to the test!
+				held the occasional game jam to put our skills to the test!
 			</p>
 			`
 		},
@@ -59,7 +59,7 @@
 				left: 233
 			},
 			description: `
-			<h3>Internship/Job at Herzog Technologies (HTI)</h3>
+			<h3>Working at Herzog Technologies (HTIX)</h3>
 			<h5>June 2019 – June 2020; June 2020 - February 2022</h5>
 			<p>
 				I started out as an intern during the summer of my junior year of college 
@@ -68,13 +68,13 @@
 			<p>
 				As an intern I got my first exposure to creating full-stack web applications
 				using Django, DjangoREST, and React JS. After first working with the senior engineer to write unit tests
-				for the Django REST backend, I was eventually tasked with designing, developing, and maintaining
+				for the DjangoREST backend, I was eventually tasked with designing, developing, and maintaining
 				a full-stack, fully offline-capable web application that would allow technicians to digitally fill out
-				inspectoin reports for critical network infrastructure while in the field.
+				inspection reports for critical network infrastructure while in the field.
 			</p> 
 			<p>
 				During my time at Herzog I also got to work with Elasticsearch, Logstash, 
-				and Kibana (the ELK stack). Being a leader in PTC hosting, one of HTI's main 
+				and Kibana (the ELK stack). Being a leader in PTC hosting, one of HTIX's main 
 				daily operations was analyzing logs pulled off of locomotives operating all over the country.
 				This meant ingesting millions of logs every day, and having several healthy Elasticsearch 
 				clusters helped immensely in reducing the time the operations department had to 
@@ -97,7 +97,7 @@
 				200 unique Lock Out Tag Out forms for the plant's various machines.
 			</p>
 			<p>
-				During my second summer, the safety and maintenance department brought me in to help them automate some of 
+				During my second summer, the maintenance department brought me in to help them automate some of 
 				the manual paperwork that they had to do on a daily basis. My work with them helped them save around 5 
 				hours per week of manual paperwork.
 			</p>`
@@ -109,7 +109,21 @@
 				top: 118,
 				left: 280
 			},
-			description: ``
+			description: `<h3>Working at Iowa 80 Group</h3>
+			<h5>March 2022 - Present</h5>
+			<p>
+				After working at Herzog for almost three years and living in Texas for about six, I decided
+				to move back home to Iowa.
+			</p>
+			<p>
+				I joined up with Iowa 80 Group in Walcott, Iowa as a Software Engineer. While working
+				on the campus of the World's Largest Truckstop, I developed a full-stack web application to help
+				the Iowa80.com shipping and receiving department catalog photos of damaged inventory.
+				I developed a second full-stack web application to replace a legacy Access inventory management application.
+				I also assisted in the development and deployment of the new point-of-sale application for the Truckomat truck wash,
+				and assisted in the modernization of various legacy green screen applications and reports to modern web applications.
+			</p>
+			`
 		}
 	];
 </script>

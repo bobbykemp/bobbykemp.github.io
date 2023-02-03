@@ -40,8 +40,8 @@
 
 <svelte:window on:keydown={handle_keydown} />
 
+<!-- svelte-ignore a11y-click-events-have-key-events -->
 <div class="modal-background" on:click={close} />
-
 <div class="modal" role="dialog" aria-modal="true" bind:this={modal}>
 	<!-- svelte-ignore a11y-click-events-have-key-events -->
 	<div on:click={close} class="close-button">
@@ -76,11 +76,7 @@
 		transform: translate(-50%, -50%);
 		padding: 1em;
 		border-radius: 0.2em;
-		background: white;
-	}
-
-	button {
-		display: block;
+		background: #f5f0dd;
 	}
 
 	.close-button {

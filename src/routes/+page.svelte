@@ -7,7 +7,31 @@
 	<div class="container">
 		<img class="profile" src={profile} alt="profile" />
 	</div>
-	<div class="container">
+	<div class="container" style="justify-content: center">
+		<IconButton
+			minWidth="90px"
+			href={'https://www.linkedin.com/in/bobby-kemp'}
+			width="20"
+			iconClass="mdi:linkedin"
+			buttonText="LinkedIn"
+			iconColor="#F5F0DD"
+			textColor="#F5F0DD"
+			backgroundColor="#953638"
+			flexDirection="row"
+		/>
+		<IconButton
+			minWidth="90px"
+			href={'https://github.com/bobbykemp'}
+			width="20"
+			iconClass="mdi:github"
+			buttonText="GitHub"
+			iconColor="#F5F0DD"
+			textColor="#F5F0DD"
+			backgroundColor="#953638"
+			flexDirection="row"
+		/>
+	</div>
+	<div class="container" style="max-width: 750px;">
 		<IconButton
 			href={'/workplaces'}
 			width="90"

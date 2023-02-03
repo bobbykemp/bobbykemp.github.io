@@ -8,11 +8,12 @@
 	export let textColor = '#000000';
 	export let padding = '10px';
 	export let backgroundColor = '#1C516C';
+	export let minWidth = '150px';
 </script>
 
 <div
 	class="icon-box"
-	style="flex-direction: {flexDirection}; background-color: {backgroundColor}; padding: {padding}"
+	style="flex-direction: {flexDirection}; background-color: {backgroundColor}; padding: {padding}; min-width: {minWidth};"
 >
 	<Icon style="color: {iconColor}" {width} icon={iconClass} />
 	{#if buttonText.length > 0}
@@ -28,8 +29,6 @@
 		border-radius: 10px;
 		display: flex;
 		height: auto;
-		width: 100px;
-		min-width: 150px;
 		text-align: center;
 		padding: 0.5em;
 		margin: 5px;
