@@ -33,6 +33,14 @@
 	</div>
 	<div class="container" style="max-width: 750px;">
 		<IconButton
+			href={'/about'}
+			width="90"
+			iconClass="mdi:about-circle-outline"
+			buttonText="About me"
+			iconColor="#F5F0DD"
+			textColor="#F5F0DD"
+		/>
+		<IconButton
 			href={'/workplaces'}
 			width="90"
 			iconClass="ph:map-trifold-duotone"

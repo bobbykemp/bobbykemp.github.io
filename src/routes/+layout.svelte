@@ -5,4 +5,12 @@
 
 <Header />
 
-<slot />
+<div class="site">
+	<slot />
+</div>
+
+<style>
+	.site {
+		margin-top: 150px;
+	}
+</style>

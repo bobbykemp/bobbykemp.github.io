@@ -34,5 +34,6 @@
 		"@iconify/iconify": "^3.0.1",
 		"@iconify/svelte": "^3.0.1",
 		"@sveltejs/adapter-static": "^1.0.5"
-	}
+	},
+	"packageManager": "yarn@3.4.1"
 }
