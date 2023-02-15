@@ -27,6 +27,12 @@
 				textColor: ivory,
 				iconClass: 'mdi:language-java',
 				buttonText: 'Java'
+			},
+			{
+				iconColor: ivory,
+				textColor: ivory,
+				iconClass: 'mdi:language-rust',
+				buttonText: 'Rust'
 			}
 		],
 		frameworks: [
@@ -41,6 +47,12 @@
 				textColor: ivory,
 				iconClass: 'file-icons:workbox',
 				buttonText: 'Workbox'
+			},
+			{
+				iconColor: ivory,
+				textColor: ivory,
+				iconClass: 'carbon:logo-svelte',
+				buttonText: 'Svelte'
 			},
 			{
 				iconColor: ivory,

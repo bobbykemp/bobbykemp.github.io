@@ -49,7 +49,9 @@
 	</div>
 	<slot name="header" />
 	<hr />
-	<slot />
+	<div class="modal-content">
+		<slot />
+	</div>
 	<hr />
 </div>
 
@@ -77,6 +79,10 @@
 		padding: 1em;
 		border-radius: 0.2em;
 		background: #f5f0dd;
+	}
+
+	.modal-content {
+		overflow-y: scroll;
 	}
 
 	.close-button {
