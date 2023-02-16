@@ -21,6 +21,8 @@
 		height: 105px;
 		background-color: #f5f0dd;
 		border-bottom: 15px groove #fda649;
+		/* top-left | top-right | bottom-right | bottom-left */
+		border-radius: 20px 20px;
 	}
 	div.main {
 		font-family: 'Eczar', serif;
