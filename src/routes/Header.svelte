@@ -12,13 +12,13 @@
 		display: flex;
 		flex-wrap: wrap;
 		flex-direction: column;
+		flex-flow: column;
 		justify-content: center;
 		align-items: center;
 		position: fixed;
 		left: 0;
 		top: 0;
 		width: 100%;
-		height: 105px;
 		background-color: #f5f0dd;
 		border-bottom: 15px groove #fda649;
 		/* top-left | top-right | bottom-right | bottom-left */
