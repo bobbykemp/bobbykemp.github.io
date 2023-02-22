@@ -6,11 +6,12 @@
 <BackButton />
 
 <div class="container">
-	<ResumePreview width={1200} height={550} />
+	<ResumePreview width={1200} />
 </div>
 
 <style>
 	.container {
+		height: 100%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
