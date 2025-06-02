@@ -47,7 +47,7 @@
 			href={'/about'}
 			width="70"
 			iconClass="mdi:about-circle-outline"
-			buttonText="About me"
+			buttonText="About Me"
 			iconColor="#F5F0DD"
 			textColor="#F5F0DD"
 		/>

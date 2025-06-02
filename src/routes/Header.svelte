@@ -1,7 +1,7 @@
 <header>
 	<div class="main">Bobby Kemp</div>
 	<div class="secondary-container">
-		<div class="typewriter">Software Engineer</div>
+		<div class="typewriter">Full Stack Software Engineer</div>
 	</div>
 </header>
 
