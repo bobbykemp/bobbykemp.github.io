@@ -116,12 +116,13 @@
 				to move back home to Iowa.
 			</p>
 			<p>
-				I joined up with Iowa 80 Group in Walcott, Iowa as a Software Engineer. While working
-				on the campus of the World's Largest Truckstop, I developed a full-stack web application to help
-				the Iowa80.com shipping and receiving department catalog photos of damaged inventory.
-				I developed a second full-stack web application to replace a legacy Access inventory management application.
-				I also assisted in the development and deployment of the new point-of-sale application for the Truckomat truck wash,
-				and assisted in the modernization of various legacy green screen applications and reports to modern web applications.
+				I joined up with Iowa 80 Group in Walcott, Iowa as a Software Engineer. While working on the campus of the World's Largest Truckstop, I developed a full-stack web application to help the Iowa80.com shipping and receiving department catalog photos of damaged inventory. I developed a second full-stack web application to replace a legacy Access inventory management application.
+
+I engineered a real-time computer vision pipeline to detect trucks and extract relevant metadata, including company name and trailer number, and built a companion frontend dashboard for real-time reporting. I replaced a legacy FTP-based CAT Scale ingestion process with a modern Spring Batch application, reducing runtime from over 10 hours to under 30 minutes. I implemented secure, containerized REST APIs using Spring Boot with Keycloak for OAuth2 authentication, giving internal and external teams structured access to legacy data.
+
+I developed a secure password reset backend integrated with IBM i (AS/400) using JT400, significantly improving user experience and reducing IT support tickets by 10–15 per week. I also assisted in the development and deployment of the new point-of-sale application for the Truckomat truck wash, and helped modernize various green screen applications and reports into web-based tools.
+
+All applications were containerized using Docker and deployed using modern CI/CD practices with Jenkins and Git.
 			</p>
 			`
 		}

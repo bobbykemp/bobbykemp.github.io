@@ -2,39 +2,49 @@
 	import BackButton from '$lib/components/BackButton.svelte';
 </script>
 
-<BackButton />
-
-<div class="about">
-	<p>
-		<i
-			>I enjoy designing and building pragmatic software centered around a cohesive user experience.</i
-		>
-	</p>
-	<p>
-		I am a highly organized individual who requires little supervision to get a job done. I am very
-		comfortable working in highly diverse teams of various skill levels.
-	</p>
-	<p>
-		I have full-stack web development experience including writing back-end web applications/REST
-		APIs with the Django, Django-REST, and Express frameworks, as well as writing modern front-end
-		applications and Progressive Web Apps using React and Svelte.
-	</p>
-	<p>
-		I have experience with various programming languages including Python, JavaScript, Java, C#, and
-		Rust. Moreover, I am very familiar with the process of designing systems from an
-		object-oriented, test-driven perspective. I am comfortable and have experience working in all
-		major operating systems (Windows, Linux, macOS). I am experienced in using Git for version
-		control. I am experienced in using Docker and Docker Compose for developing easily replicable
-		and composable container-based software systems. I also have experience with modern CI/CD
-		practices using Jenkins.
-	</p>
+<div class="page">
+	<BackButton />
+	<div class="about">
+		<p>Hi, I'm Bobby Kemp.</p>
+		<p>
+			I'm a full-stack software engineer with a focus on building scalable, real-time systems and
+			robust backend services using Spring Boot and Django REST. I've led the development of
+			full-stack, containerized applications—often deployed with Docker and managed through CI/CD
+			pipelines using Jenkins and Git.
+		</p>
+		<p>
+			My work spans enterprise modernization, point-of-sale system integrations, and
+			performance-critical pipelines. I've built and maintained RESTful APIs, implemented secure
+			authentication flows with Keycloak (OAuth2), and integrated with legacy systems like IBM i
+			(AS/400) via JT400. My frontend experience includes modern web technologies like React and
+			Svelte, often deployed as Progressive Web Apps.
+		</p>
+		<p>
+			Whether I'm replacing an FTP batch job with a performant Spring Batch system or engineering a
+			real-time computer vision pipeline with a frontend dashboard, I bring a deep understanding of
+			system design, user experience, and cross-functional collaboration. I care about building
+			software that not only works, but endures—and I thrive in teams where technical ownership and
+			autonomy are valued.
+		</p>
+	</div>
 </div>
 
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=Eczar&display=swap');
+	.page {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 1rem;
+		box-sizing: border-box;
+	}
+
 	.about {
-		margin-left: 2em;
-		margin-right: 2em;
+		text-align: center;
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 1em;
 	}
 	p {
 		font-family: 'Eczar', serif;

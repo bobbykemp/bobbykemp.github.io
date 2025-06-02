@@ -13,6 +13,12 @@
 			{
 				iconColor: ivory,
 				textColor: ivory,
+				iconClass: 'mdi:language-java',
+				buttonText: 'Java'
+			},
+			{
+				iconColor: ivory,
+				textColor: ivory,
 				iconClass: 'mdi:language-javascript',
 				buttonText: 'JavaScript'
 			},
@@ -25,17 +31,17 @@
 			{
 				iconColor: ivory,
 				textColor: ivory,
-				iconClass: 'mdi:language-java',
-				buttonText: 'Java'
-			},
-			{
-				iconColor: ivory,
-				textColor: ivory,
 				iconClass: 'mdi:language-rust',
 				buttonText: 'Rust'
 			}
 		],
 		frameworks: [
+			{
+				iconColor: ivory,
+				textColor: ivory,
+				iconClass: 'simple-icons:springboot',
+				buttonText: 'Spring Boot'
+			},
 			{
 				iconColor: ivory,
 				textColor: ivory,
@@ -114,7 +120,7 @@
 				iconColor: ivory,
 				textColor: ivory,
 				iconClass: 'simple-icons:elasticsearch',
-				buttonText: 'ElasticSearch'
+				buttonText: 'Elasticsearch'
 			},
 			{
 				iconColor: ivory,
@@ -133,6 +139,12 @@
 			{
 				iconColor: ivory,
 				textColor: ivory,
+				iconClass: 'akar-icons:postgresql-fill',
+				buttonText: 'PostgreSQL'
+			},
+			{
+				iconColor: ivory,
+				textColor: ivory,
 				iconClass: 'tabler:brand-mysql',
 				buttonText: 'MySQL'
 			},
@@ -141,6 +153,12 @@
 				textColor: ivory,
 				iconClass: 'carbon:ibm-db2-alt',
 				buttonText: 'DB2'
+			},
+			{
+				iconColor: ivory,
+				textColor: ivory,
+				iconClass: 'file-icons:sqlite',
+				buttonText: 'SQLite'
 			}
 		],
 		systems: [
@@ -148,13 +166,25 @@
 				iconColor: ivory,
 				textColor: ivory,
 				iconClass: 'mdi:ubuntu',
-				buttonText: 'Ubuntu & Ubuntu Server'
+				buttonText: 'Ubuntu'
+			},
+			{
+				iconColor: ivory,
+				textColor: ivory,
+				iconClass: 'mdi:redhat',
+				buttonText: 'RHEL'
 			},
 			{
 				iconColor: ivory,
 				textColor: ivory,
 				iconClass: 'mdi:centos',
 				buttonText: 'CentOS'
+			},
+			{
+				iconColor: ivory,
+				textColor: ivory,
+				iconClass: 'lineicons:ibm',
+				buttonText: 'IBMi (AS/400)'
 			},
 			{
 				iconColor: ivory,
